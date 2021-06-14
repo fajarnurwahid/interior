@@ -571,6 +571,12 @@ footer .right .menu a {
 	#testimonial .testi-box {
 		width: 90%;
 	}
+        #header .text h1 {
+                font-size: 36px;
+        }
+        #header .text .btn {
+                font-size: 18px;
+        }
 }
 
 
