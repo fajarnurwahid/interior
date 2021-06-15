@@ -12,10 +12,21 @@
 
 :root {
 	--clr: #7D5A50;
+
+	/* Size */
+	--smaller: 10px;
+	--small: 18px;
+	--regular: 24px;
+	--medium: 36px;
+	--large: 48px;
+	--extra: 56px;
+	--big: 64px;
+
+	--phone-text: 16px;
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1400px;
 	height: 100%;
 	margin: 0 auto;
 	padding: 0 18px;
@@ -43,7 +54,7 @@ nav .container {
 	align-items: center;
 }
 nav .logo {
-	font-size: 36px;
+	font-size: var(--medium);
 	font-weight: 700;
 	color: #000;
 }
@@ -52,7 +63,7 @@ nav .nav-menu {
 	align-items: center;
 }
 nav .nav-menu li {
-	margin-left: 36px;
+	margin-left: var(--medium);
 }
 nav .nav-menu li a {
 	color: #000;
@@ -86,26 +97,26 @@ nav .menu-icon {
 	width: calc(100% - 400px);
 }
 #header .text h5 {
-	font-size: 18px;
+	font-size: var(--small);
 	font-weight: 700;
 	color: var(--clr);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
 #header .text h1 {
-	font-size: 56px;
+	font-size: var(--extra);
 	font-weight: 700;
 	color: #000;
 }
 #header .text p {
-	font-size: 18px;
+	font-size: var(--small);
 	line-height: 160%;
 	margin: 24px 0 48px;
 }
 #header .text .btn {
 	display: inline-block;
 	padding: 18px 36px;
-	font-size: 20px;
+	font-size: calc(var(--small) + 2px);
 	font-weight: 600;
 	background: var(--clr);
 	color: #fff;
@@ -149,7 +160,7 @@ nav .menu-icon {
 	margin-left: 24px;
 }
 #about .text h2 {
-	font-size: 36px;
+	font-size: var(--medium);
 	font-weight: 500;
 	color: #fff;
 	margin-bottom: 24px;
@@ -157,7 +168,7 @@ nav .menu-icon {
 #about .text p {
 	line-height: 160%;
 	color: #fff;
-	font-size: 18px;
+	font-size: var(--small);
 }
 #about .img {
 	flex: 1;
@@ -186,12 +197,12 @@ nav .menu-icon {
 	padding-right: 0;
 }
 #services .title {
-	font-size: 36px;
+	font-size: var(--medium);
 	font-weight: 500;
 	text-align: center;
 }
 #services .description {
-	font-size: 18px;
+	font-size: var(--small);
 	font-weight: 400;
 	margin: 8px 0 48px;
 	text-align: center;
@@ -212,16 +223,16 @@ nav .menu-icon {
 	margin: 48px 0;
 }
 #services .services .content .service .icon {
-	font-size: 64px;
+	font-size: var(--big);
 	margin-right: 24px;
 }
 #services .services .content .service .text .sub-title {
-	font-size: 24px;
+	font-size: var(--regular);
 	font-weight: 700;
 	margin-bottom: 8px;
 }
 #services .services .content .service .text p {
-	font-size: 18px;
+	font-size: var(--small);
 }
 #services .services .img {
 	flex: 1;
@@ -249,7 +260,7 @@ nav .menu-icon {
 	padding: 48px 18px;
 }
 #testimonial .title {
-	font-size: 36px;
+	font-size: var(--medium);
 	font-weight: 500;
 	color: #fff;
 	margin-bottom: 8px;
@@ -257,7 +268,7 @@ nav .menu-icon {
 }
 #testimonial .container > p {
 	text-align: center;
-	font-size: 18px;
+	font-size: var(--small);
 	color: #fff;
 	margin-bottom: 48px;
 }
@@ -270,7 +281,7 @@ nav .menu-icon {
 	margin: 0 auto;
 }
 #testimonial .testi-box > p {
-	font-size: 24px;
+	font-size: var(--regular);
 	font-style: italic;
 	font-weight: 400;
 	text-align: center;
@@ -304,11 +315,11 @@ nav .menu-icon {
 	margin-left: 24px;
 }
 #testimonial .testi-box .user .profile .name {
-	font-size: 18px;
+	font-size: var(--small);
 	font-weight: 700;
 }
 #testimonial .testi-box .user .profile p {
-	font-size: 14px;
+	font-size: var(--phone-text);
 	color: #aaa;
 	font-weight: 400;
 }
@@ -324,14 +335,14 @@ nav .menu-icon {
 	padding: 48px 18px;
 }
 #subscribe .title {
-	font-size: 36px;
+	font-size: var(--medium);
 	font-weight: 500;
 	margin-bottom: 8px;
 	text-align: center;
 }
 #subscribe .container > p {
 	text-align: center;
-	font-size: 18px;
+	font-size: var(--small);
 	margin-bottom: 48px;
 }
 #subscribe form {
@@ -346,7 +357,7 @@ nav .menu-icon {
 	box-shadow: 8px 8px 24px 0 rgba(0, 0, 0, .1);
 	border: none;
 	width: 100%;
-	font-size: 18px;
+	font-size: var(--small);
 }
 #subscribe form button {
 	position: absolute;
@@ -356,7 +367,7 @@ nav .menu-icon {
 	background: var(--clr);
 	color: #fff;
 	padding: 12px 20px;
-	font-size: 18px;
+	font-size: var(--small);
 	font-weight: 600;
 	border: none;
 	outline: none;
@@ -381,14 +392,14 @@ footer .left {
 	flex: 1;
 }
 footer .left .logo {
-	font-size: 24px;
+	font-size: var(--regular);
 	font-weight: 700;
 	color: #fff;
 	display: inline-block;
 	margin-bottom: 18px;
 }
 footer .left p {
-	font-size: 18px;
+	font-size: var(--small);
 	color: #fff;
 	margin-bottom: 36px;
 }
@@ -416,7 +427,7 @@ footer .right {
 	flex: .4;
 }
 footer .right .title {
-	font-size: 20px;
+	font-size: calc(var(--small) + 2px);
 	font-weight: 600;
 	color: #fff;
 	margin-bottom: 8px;
@@ -571,12 +582,6 @@ footer .right .menu a {
 	#testimonial .testi-box {
 		width: 90%;
 	}
-        #header .text h1 {
-                font-size: 36px;
-        }
-        #header .text .btn {
-                font-size: 18px;
-        }
 }
 
 
@@ -585,10 +590,90 @@ footer .right .menu a {
 
 /* Mobile */
 @media (max-width: 576px) {
+	/* Navbar */
+	nav .logo {
+		font-size: var(--regular);
+	}
+
+	/* Header */
+	#header .text h5 {
+		font-size: var(--phone-text);
+	}
+	#header .text h1 {
+		font-size: var(--medium);
+	}
+	#header .text p {
+		font-size: var(--phone-text);
+	}
+	#header .text .btn {
+		font-size: calc(var(--phone-text) + 2px);
+	}
+
+	/* About */
+	#about .text h2 {
+		font-size: var(--regular);
+	}
+	#about .text p {
+		font-size: var(--phone-text);
+	}
+
+	/* Services */
+	#services .title {
+		font-size: var(--regular);
+	}
+	#services .description {
+		font-size: var(--phone-text);
+	}
+	#services .services .content .service .icon {
+		font-size: var(--large);
+	}
+	#services .services .content .service .text .sub-title {
+		font-size: var(--small);
+	}
+	#services .services .content .service .text p {
+		font-size: var(--phone-text);
+	}
+
+	/* Testimonial */
+	#testimonial .title {
+		font-size: var(--regular);
+	}
+	#testimonial .container > p {
+		font-size: var(--phone-text);
+	}
+	#testimonial .testi-box > p {
+		font-size: var(--small);
+	}
+
+	/* Subscribe */
+	#subscribe .title {
+		font-size: var(--regular);
+	}
+	#subscribe .container > p {
+		font-size: var(--phone-text);
+	}
+	#subscribe form {
+		width: 100%;
+	}
+	#subscribe form input {
+		font-size: var(--phone-text);
+		padding: 18px 130px 18px 24px;
+	}
+	#subscribe form button {
+		font-size: var(--phone-text);
+	}
+
+
 	footer .container {
 		flex-direction: column;
 	}
 	footer .left {
 		margin-bottom: 56px;
+	}
+	footer .left .logo {
+		font-size: var(--regular);
+	}
+	footer .left p {
+		font-size: var(--phone-text);
 	}
 }
