@@ -82,7 +82,7 @@ nav .menu-icon {
 /* Header */
 #header {
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 }
 #header .container {
 	display: flex;
@@ -90,6 +90,7 @@ nav .menu-icon {
 	align-items: center;
 	height: 100%;
 	position: relative;
+	padding: 96px 18px 56px;
 }
 #header .text {
 	position: relative;
